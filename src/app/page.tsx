@@ -20,6 +20,7 @@ import services from "../assets/services.png";
 import SubscribeNewsletter from "@/components/SubscribeNewsletter";
 
 import { CloudIcon, CodeBracketIcon, ComputerDesktopIcon, DevicePhoneMobileIcon, DocumentDuplicateIcon, GlobeAltIcon, MagnifyingGlassIcon, PuzzlePieceIcon, QuestionMarkCircleIcon, RocketLaunchIcon, SparklesIcon, Squares2X2Icon } from "@heroicons/react/24/solid";
+import { sendGAEvent } from "@next/third-parties/google";
 
 function downloadURI(uri: string, name: string) {
   var link = document.createElement("a");
@@ -344,6 +345,7 @@ export default function Home() {
             <h4 className="text-2xl mb-2.5 font-semibold tracking-wide">Citronote 3 for Windows</h4>
             <p className="tracking-wide mb-4">At the moment, it is released as an MVP with simple functions.</p>
             <button className="bg-[#D3910A] text-white rounded-full px-6 py-2.5 font-semibold hover:bg-[#bd810a] cursor-pointer transition" onClick={() => {
+              sendGAEvent('exeDownloaded');
               downloadURI("setup.exe", "Citronote 3 Beta Installer.exe");
             }}>Download Installer</button>
             <div className="text-xs mt-4">* You may see a warning like "Windows has protected your PC", but this is because the exe file is not digitally signed. If you downloaded the exe from korange.work, it is safe. If you're worried, you can also scan the file with something like VirusTotal.</div>
@@ -354,6 +356,7 @@ export default function Home() {
             <p className="tracking-wide mb-1.75">If you don't have a Windows machine, you can also try Citronote in your browser.</p>
             <p className="tracking-wide mb-4 text-sm font-semibold">However, you'll likely get a better experience on Windows, so we recommend doing so whenever possible.</p>
             <button className="bg-white text-[#d3910a] rounded-full px-6 py-2.5 font-semibold cursor-pointer transition" onClick={() => {
+              sendGAEvent('tryInBrowserClicked');
               window.open("https://som.stg.citronote.korange.work/notebook_selector.html", "_blank");
             }}>Try in browser</button>
             <div className="text-xs mt-4">* We recommend using Chrome or a Chromium-based browser. Firefox does not work due to the Web API.</div>

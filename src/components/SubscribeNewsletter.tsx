@@ -1,3 +1,4 @@
+import { sendGAEvent } from "@next/third-parties/google";
 import { useState } from "react";
 
 export default function SubscribeNewsletter({ className }: { className?: string }) {
@@ -10,6 +11,7 @@ export default function SubscribeNewsletter({ className }: { className?: string 
       return;
     }
     // Here you would typically send the email to your backend or a service like Mailchimp
+    sendGAEvent('newsletterSubscribed');
     location.href = "https://docs.google.com/forms/d/e/1FAIpQLScmxpm-bPYWSCGze9ZIhZXgJDOJotdGAYwKlN261JxokKwK2A/viewform?usp=pp_url&entry.1198173399=" + encodeURIComponent(email);
   }
 
