@@ -19,7 +19,16 @@ import scrap from "../assets/scrap.png";
 import services from "../assets/services.png";
 import SubscribeNewsletter from "@/components/SubscribeNewsletter";
 
-import { CloudIcon, CodeBracketIcon, ComputerDesktopIcon, DevicePhoneMobileIcon, DocumentDuplicateIcon, GlobeAltIcon, MagnifyingGlassIcon, PuzzlePieceIcon, RocketLaunchIcon, SparklesIcon, Squares2X2Icon } from "@heroicons/react/24/solid";
+import { CloudIcon, CodeBracketIcon, ComputerDesktopIcon, DevicePhoneMobileIcon, DocumentDuplicateIcon, GlobeAltIcon, MagnifyingGlassIcon, PuzzlePieceIcon, QuestionMarkCircleIcon, RocketLaunchIcon, SparklesIcon, Squares2X2Icon } from "@heroicons/react/24/solid";
+
+function downloadURI(uri: string, name: string) {
+  var link = document.createElement("a");
+  link.download = name;
+  link.href = uri;
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
 
 export default function Home() {
   const [hideHeader, setHideHeader] = useState(false);
@@ -334,7 +343,9 @@ export default function Home() {
             <Image src={foursquare} className="h-9 w-9 mb-6" alt="Windows Icon" />
             <h4 className="text-2xl mb-2.5 font-semibold tracking-wide">Citronote 3 for Windows</h4>
             <p className="tracking-wide mb-4">At the moment, it is released as an MVP with simple functions.</p>
-            <button className="bg-[#D3910A] text-white rounded-full px-6 py-2.5 font-semibold hover:bg-[#bd810a] cursor-pointer transition">Download Installer</button>
+            <button className="bg-[#D3910A] text-white rounded-full px-6 py-2.5 font-semibold hover:bg-[#bd810a] cursor-pointer transition" onClick={() => {
+              downloadURI("setup.exe", "Citronote 3 Beta Installer.exe");
+            }}>Download Installer</button>
             <div className="text-xs mt-4">* You may see a warning like "Windows has protected your PC", but this is because the exe file is not digitally signed. If you downloaded the exe from korange.work, it is safe. If you're worried, you can also scan the file with something like VirusTotal.</div>
           </div>
           <div className="rounded-2xl p-8 text-left border-2 border-white sm:border-0 sm:max-w-1/2">
@@ -342,9 +353,15 @@ export default function Home() {
             <h4 className="text-2xl mb-2.5 font-semibold tracking-wide">Try it in your browser</h4>
             <p className="tracking-wide mb-1.75">If you don't have a Windows machine, you can also try Citronote in your browser.</p>
             <p className="tracking-wide mb-4 text-sm font-semibold">However, you'll likely get a better experience on Windows, so we recommend doing so whenever possible.</p>
-            <button className="bg-white text-[#d3910a] rounded-full px-6 py-2.5 font-semibold cursor-pointer transition">Try in browser</button>
+            <button className="bg-white text-[#d3910a] rounded-full px-6 py-2.5 font-semibold cursor-pointer transition" onClick={() => {
+              window.open("https://som.stg.citronote.korange.work/notebook_selector.html", "_blank");
+            }}>Try in browser</button>
             <div className="text-xs mt-4">* We recommend using Chrome or a Chromium-based browser. Firefox does not work due to the Web API.</div>
           </div>
+        </div>
+        <div className="flex items-center">
+          <QuestionMarkCircleIcon className="h-5 w-5 text-white mr-2 mt-4" />
+          <div className="text-left text-sm mt-4">If you notice anything unusual or have any feedback, please send it <a className="underline" href="https://forms.gle/BHxbxJph5AQi7bfk9">here</a>.</div>
         </div>
 
         <h3 className="text-left mt-24 text-4xl font-semibold mb-8">Newsletter</h3>
