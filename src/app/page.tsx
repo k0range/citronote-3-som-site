@@ -79,26 +79,26 @@ export default function Home() {
         <div className="max-w-4xl w-full mx-auto">
           <div className="h-[calc(100vh-2.75rem-12rem)] flex flex-col justify-center pb-14">
             <Image src={recordOrganize} className="h-34 sm:h-48 w-auto mb-10 sm:mb-13 mx-auto" alt="File and Folders" />
-            <div className="text-4xl tracking-wide leading-12 ">For us, recording and organizing things is essential.</div>
+            <div className="text-3xl sm:text-4xl tracking-wide leading-12 ">For us, recording and organizing things is essential.</div>
           </div>
           <div className="h-[calc(100vh-2.75rem-12rem)] flex flex-col justify-center pb-14">
             <Image src={sometimes} className="h-34 sm:h-48 w-auto mb-10 sm:mb-13 mx-auto" alt="Long and single line notes" />
-            <div className="text-4xl tracking-wide leading-12">Sometimes it’s a long, structured document; other times it’s just a single line that comes to mind.</div>
+            <div className="text-3xl sm:text-4xl tracking-wide leading-12">Sometimes it’s a long, structured document; other times it’s just a single line that comes to mind.</div>
           </div>
           <div className="h-[calc(100vh-2.75rem-12rem)] flex flex-col justify-center pb-14">
             <Image src={services} className="h-34 sm:h-48 w-auto mb-10 sm:mb-13 mx-auto" alt="Scattered notes" />
-            <div className="text-4xl tracking-wide leading-12">But our information is always scattered across folders and services.</div>
+            <div className="text-3xl sm:text-4xl tracking-wide leading-12">But our information is always scattered across folders and services.</div>
           </div>
           <div className="h-[calc(100vh-2.75rem-16rem)] flex flex-col justify-center pb-14">
             <Image src={buried} className="h-34 sm:h-48 w-auto mb-10 sm:mb-13 mx-auto" alt="" />
-            <div className="text-4xl tracking-wide leading-12">Even an important idea from one day can end up buried somewhere before we realize it.</div>
+            <div className="text-3xl sm:text-4xl tracking-wide leading-12">Even an important idea from one day can end up buried somewhere before we realize it.</div>
           </div>
           <div className="h-[calc(100vh-2.75rem-16rem)] flex flex-col justify-center pb-14">
             <Image src={whatif} className="h-34 sm:h-48 w-auto mb-10 sm:mb-13 mx-auto" alt="" />
-            <div className="text-4xl tracking-wide leading-12">What if there were a single place where you could keep ideas, notes, and everything you love?</div>
+            <div className="text-3xl sm:text-4xl tracking-wide leading-12">What if there were a single place where you could keep ideas, notes, and everything you love?</div>
           </div>
           <div className="h-[calc(100vh-2.75rem-16rem)] flex flex-col justify-center pb-50">
-            <div className="text-4xl tracking-wide leading-12">Could a <span className="text-[#FFB011]">powerful note-taking app</span> that stores all kinds of information become that place?</div>
+            <div className="text-3xl sm:text-4xl tracking-wide leading-12">Could a <span className="text-[#FFB011]">powerful note-taking app</span> that stores all kinds of information become that place?</div>
           </div>
         </div>
       </div>
@@ -116,8 +116,8 @@ export default function Home() {
 
         <h3 className="text-left mt-24 text-4xl font-semibold mb-8">Features</h3>
         <div className="flex mb-9">
-          <div className="mr-5.5 sm:mr-8 min-w-33 w-33">
-            <Image src={notetypes} className="min-w-20 w-33 h-auto drop-shadow-lg" alt="Note Types" />
+          <div className="mr-5.5 sm:mr-8 min-w-16 sm:min-w-30 w-33">
+            <Image src={notetypes} className="min-w-16 sm:min-w-20 w-33 h-auto drop-shadow-lg" alt="Note Types" />
           </div>
           <div className="flex-grow text-left">
             <h4 className="text-2xl mb-2 font-semibold tracking-wide">Note Types</h4>
@@ -126,8 +126,8 @@ export default function Home() {
           </div>
         </div>
         <div className="flex mb-9">
-          <div className="mr-5.5 sm:mr-8 min-w-33 w-33">
-            <Image src={markdown} className="min-w-20 w-32 h-auto drop-shadow-lg rotate-9" alt="Markdown syntaxs" />
+          <div className="mr-5.5 sm:mr-8 min-w-16 sm:min-w-30 w-33">
+            <Image src={markdown} className="min-w-16 sm:min-w-20 w-32 h-auto drop-shadow-lg rotate-9" alt="Markdown syntaxs" />
           </div>
           <div className="flex-grow text-left">
             <h4 className="text-2xl mb-2 font-semibold tracking-wide">Markdown</h4>
@@ -136,8 +136,8 @@ export default function Home() {
           </div>
         </div>
         <div className="flex mb-9">
-          <div className="mr-5.5 sm:mr-8 min-w-33 w-33">
-            <Image src={fs} className="min-w-20 w-32 -rotate-6 h-auto drop-shadow-lg" alt="Folder image" />
+          <div className="mr-5.5 sm:mr-8 min-w-16 sm:min-w-30 w-33">
+            <Image src={fs} className="min-w-16 sm:min-w-20 w-32 -rotate-6 h-auto drop-shadow-lg" alt="Folder image" />
           </div>
           <div className="flex-grow text-left">
             <h4 className="text-2xl mb-2 font-semibold tracking-wide">Filesystem based</h4>
@@ -146,8 +146,8 @@ export default function Home() {
           </div>
         </div>
         <div className="flex">
-          <div className="mr-5.5 sm:mr-8 min-w-33 w-33">
-            <Image src={scrap} className="min-w-20 w-32 -rotate-8 h-auto drop-shadow-lg" alt="Scrap image" />
+          <div className="mr-5.5 sm:mr-8 min-w-16 sm:min-w-30 w-33">
+            <Image src={scrap} className="min-w-16 sm:min-w-20 sm:w-32 -rotate-8 h-auto drop-shadow-lg" alt="Scrap image" />
           </div>
           <div className="flex-grow text-left">
             <h4 className="text-2xl mb-2 font-semibold tracking-wide">Scrap</h4>
@@ -363,7 +363,7 @@ export default function Home() {
           </div>
         </div>
         <div className="flex items-center">
-          <QuestionMarkCircleIcon className="h-5 w-5 text-white mr-2 mt-4" />
+          <QuestionMarkCircleIcon className="h-5 w-5 min-w-5 text-white mr-2 mt-4" />
           <div className="text-left text-sm mt-4">If you notice anything unusual or have any feedback, please send it <a className="underline" href="https://forms.gle/BHxbxJph5AQi7bfk9">here</a>.</div>
         </div>
 

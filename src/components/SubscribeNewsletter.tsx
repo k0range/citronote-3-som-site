@@ -17,7 +17,7 @@ export default function SubscribeNewsletter({ className }: { className?: string 
 
   return (
     <div className={`flex ${className}`}>
-      <input type="email" placeholder="Your email address" className="border-2 border-white flex-grow rounded-l-full px-6 py-3 text-white outline-none" value={email} onChange={(e) => {
+      <input type="email" placeholder="Your email address" className="border-2 border-white flex-grow rounded-l-full px-6 py-3 text-white outline-none min-w-0" value={email} onChange={(e) => {
         setEmail(e.target.value);
       }} onKeyDown={(e) => {
         if (e.key === "Enter") submit();
