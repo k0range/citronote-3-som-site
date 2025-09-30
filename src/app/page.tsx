@@ -34,7 +34,7 @@ function downloadURI(uri: string, name: string) {
 export default function Home() {
   const [hideHeader, setHideHeader] = useState(false);
   const mainContentRef = useRef<HTMLDivElement>(null);
-
+  
   useEffect(() => {
     const handleScroll = () => {
       const rect = mainContentRef.current?.getBoundingClientRect();
@@ -319,7 +319,7 @@ export default function Home() {
           <div className="text-left border-2 border-white rounded-2xl p-6 sm:border-0 sm:p-0 sm:rounded-none">
             <ComputerDesktopIcon className="h-12 w-12 text-white" />
             <div className="text-xl font-semibold mt-2 mb-1">Other Platform</div>
-            <p className="">At the moment, the app is available on Windows and in the browser. In the future, we would like to expand support to macOS and Linux as well, though I currently don’t have access to a Mac device.</p>
+            <p className="">At the moment, the app is available on Windows and in the browser. In the future, we would like to expand support to macOS and Linux as well, though I currently don't have access to a Mac device.</p>
           </div>
           <div className="text-left border-2 border-white rounded-2xl p-6 sm:border-0 sm:p-0 sm:rounded-none">
             <GlobeAltIcon className="h-12 w-12 text-white" />
