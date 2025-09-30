@@ -77,27 +77,27 @@ export default function Home() {
 
       <div className="mt-28 pt-22 max-w-7xl mx-auto bg-[#2a2a2a] py-4 min-h-screen px-14">
         <div className="max-w-4xl w-full mx-auto">
-          <div className="h-[calc(100vh-2.75rem-12rem)] flex flex-col justify-center pb-14">
+          <div className="h-[calc(100vh-2.75rem-10rem)] flex flex-col justify-center pb-14">
             <Image src={recordOrganize} className="h-34 sm:h-48 w-auto mb-10 sm:mb-13 mx-auto" alt="File and Folders" />
             <div className="text-3xl sm:text-4xl tracking-wide leading-12 ">For us, recording and organizing things is essential.</div>
           </div>
-          <div className="h-[calc(100vh-2.75rem-12rem)] flex flex-col justify-center pb-14">
+          <div className="h-[calc(100vh-2.75rem-10rem)] flex flex-col justify-center pb-14">
             <Image src={sometimes} className="h-34 sm:h-48 w-auto mb-10 sm:mb-13 mx-auto" alt="Long and single line notes" />
             <div className="text-3xl sm:text-4xl tracking-wide leading-12">Sometimes it’s a long, structured document; other times it’s just a single line that comes to mind.</div>
           </div>
-          <div className="h-[calc(100vh-2.75rem-12rem)] flex flex-col justify-center pb-14">
+          <div className="h-[calc(100vh-2.75rem-10rem)] flex flex-col justify-center pb-14">
             <Image src={services} className="h-34 sm:h-48 w-auto mb-10 sm:mb-13 mx-auto" alt="Scattered notes" />
             <div className="text-3xl sm:text-4xl tracking-wide leading-12">But our information is always scattered across folders and services.</div>
           </div>
-          <div className="h-[calc(100vh-2.75rem-16rem)] flex flex-col justify-center pb-14">
+          <div className="h-[calc(100vh-2.75rem-10rem)] flex flex-col justify-center pb-14">
             <Image src={buried} className="h-34 sm:h-48 w-auto mb-10 sm:mb-13 mx-auto" alt="" />
             <div className="text-3xl sm:text-4xl tracking-wide leading-12">Even an important idea from one day can end up buried somewhere before we realize it.</div>
           </div>
-          <div className="h-[calc(100vh-2.75rem-16rem)] flex flex-col justify-center pb-14">
+          <div className="h-[calc(100vh-2.75rem-10rem)] flex flex-col justify-center pb-14">
             <Image src={whatif} className="h-34 sm:h-48 w-auto mb-10 sm:mb-13 mx-auto" alt="" />
             <div className="text-3xl sm:text-4xl tracking-wide leading-12">What if there were a single place where you could keep ideas, notes, and everything you love?</div>
           </div>
-          <div className="h-[calc(100vh-2.75rem-16rem)] flex flex-col justify-center pb-50">
+          <div className="h-[calc(100vh-2.75rem-10rem)] flex flex-col justify-center pb-50">
             <div className="text-3xl sm:text-4xl tracking-wide leading-12">Could a <span className="text-[#FFB011]">powerful note-taking app</span> that stores all kinds of information become that place?</div>
           </div>
         </div>
