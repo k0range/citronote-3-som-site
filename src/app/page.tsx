@@ -348,6 +348,12 @@ export default function Home() {
               sendGAEvent('exeDownloaded');
               downloadURI("setup.exe", "Citronote 3 Beta Installer.exe");
             }}>Download Installer</button>
+            <button className="block text-sm mt-3 border-b font-semibold hover:text-[#bd810a] duration-200 cursor-pointer"
+            onClick={() => {
+              sendGAEvent('portableDownloaded');
+              downloadURI("portable.exe", "citronote-3-beta-portable.exe");
+            }}
+            >Download Portable (experimental)</button>
             <div className="text-xs mt-4">* You may see a warning like "Windows has protected your PC", but this is because the exe file is not digitally signed. If you downloaded the exe from korange.work, it is safe. If you're worried, you can also scan the file with something like VirusTotal.</div>
           </div>
           <div className="rounded-2xl p-8 text-left border-2 border-white sm:border-0 sm:max-w-1/2">
